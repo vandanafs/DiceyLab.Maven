@@ -35,24 +35,16 @@ public class Bins {
     }
 
   public  void incrementBim(int num){
-            num+=1;  //2 occuured once -->num=1
-      System.out.println("key:"+num);
+      //2 occuured once -->num=1
+     System.out.println("key:"+num); //num 2-12=sum
       int repl = this.getBin(num);
       repl+=1;
       this.binMap.replace(num,repl);
-      //for (Object o: this.binMap.keySet())
-      //{
-      //    if (this.binMap.get(o).equals(num))
-      //    {
-      //        //binMap.get(o).
-      //        this.binMap(o).get
-      //        binMap.replace(num,);
-      //    }
-      //}
+
     }
 
    public  Integer getBin ( int binNumber) { //2 to 12
-        int numberOfBin=this.binMap.get(binNumber);   //number of each bin 2 to 12 occuured sum
+        int numberOfBin=this.binMap.get(binNumber);   //value of binNumber
           return numberOfBin; // number of tens in the 10 bin
 
 

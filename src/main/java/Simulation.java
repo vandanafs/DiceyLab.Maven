@@ -9,7 +9,7 @@ Simulation(int numberOfDies,int numberOfTosses){  //number of tosses 10000
 }
 
     public static void main ( String[] args ) {
-           Simulation sim=new Simulation(2,10000);
+           Simulation sim=new Simulation(2,1000000);
            sim.runSimulation();
            sim.printResults();
 
@@ -20,10 +20,10 @@ Simulation(int numberOfDies,int numberOfTosses){  //number of tosses 10000
        // Bins results=new Bins(2,12);
        int tossSum= 0;
        int i=0;
-    for (i=2;i<=10000;i++) {
+        for (i=1;i<= this.numberOfTosses;i++) {
     tossSum = dice.tossAndSum();
     // Integer numberOfBinValue=results.getBin(tossSum);  //passing sum to getBin=3 value from haspmap
-    results.incrementBim(tossSum-1);
+    results.incrementBim(tossSum);
 }
 
     }
